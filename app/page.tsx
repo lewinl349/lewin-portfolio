@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGit, FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
@@ -17,23 +17,28 @@ export default function Home() {
         <h2 className="text-4xl">Socials</h2>
 
         <ul>
-          <li>
-              <FaGithub />Github: {" "}        
-            <a
-              className="text-blue-600 underline"
-              href="https://github.com/lewinl349/">
-              @lewinl349
-            </a>
-          </li>
-          <li>
+          <div className="flex flex-row gap-2">
+            <FaGithub/>
+            <li>
+                Github: {" "}        
+              <a
+                className="text-blue-600 underline"
+                href="https://github.com/lewinl349/">
+                @lewinl349
+              </a>
+            </li>
+          </div>
+          <div className="flex flex-row gap-2">
             <FaLinkedin />
-            LinkedIn: {" "}
-            <a
-              className="text-blue-600 underline"
-              href="https://www.linkedin.com/in/lewin-lin">
-              @lewin-lin
-            </a>
-          </li>
+            <li className="vertical-align: middle;"> 
+              LinkedIn: {" "}
+              <a
+                className="text-blue-600 underline"
+                href="https://www.linkedin.com/in/lewin-lin">
+                @lewin-lin
+              </a>
+            </li> 
+          </div>
         </ul>
       </div>
 
