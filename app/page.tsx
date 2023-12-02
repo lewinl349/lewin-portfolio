@@ -1,10 +1,18 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Sidebar from "./ui/sidebar";
 
 export default function Home() {
   return (
-    <main className="flex gap-3 flex-col justify-between p-12 max-w-6xl mx-auto">
+    <main className="flex flex-row">
       <title>Portfolio</title>
+
+      <Sidebar />
+
+      <div className="grow gap-2 flex-col justify-between p-12 max-w-7xl mx-auto">
+
+      <div>
+
       <div className="grid gap-2 grid-cols-1 md:grid-cols-3">
         <div className="col-span-2">
           <h1 className="text-6xl text-blue-500"><b>Lewin Lin</b></h1>
@@ -40,7 +48,7 @@ export default function Home() {
 
       </div>
 
-      <div></div>
+      <br></br>
 
       <div className="flex flex-col gap-2">
         <h2 className="text-4xl">Skills</h2>
@@ -61,64 +69,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div></div>
-      {/*
-      <div className="flex flex-col gap-2">
-        <h2 className="text-4xl">Projects</h2>
-        <div className="grid gap-2 grid-cols-1 md:grid-cols-2">
-          <div className="p-4 border rounded shadow-md">
-            <h3 className="text-3xl text-bold">Project Alpha</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.</p>
-          </div>
-          <div className="p-4 border rounded shadow-md">
-            <h3 className="text-3xl text-bold">Project Beta</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.</p>
-          </div>
-          <div className="p-4 border rounded shadow-md">
-            <h3 className="text-3xl text-bold">Project Gamma</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.</p>
-          </div>
-          <div className="p-4 border rounded shadow-md">
-            <h3 className="text-3xl text-bold">Project Delta</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
+      </div> 
+      
       </div>
 
-      {/* An example of how to use JS functions in JSX*/}
-      {/*The date is {new Date().toUTCString()}*/}
     </main>
   )
 }
