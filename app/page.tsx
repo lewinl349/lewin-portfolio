@@ -1,45 +1,43 @@
 import { useState } from "react";
-import { FaGit, FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="flex gap-3 flex-col justify-between p-24 max-w-5xl mx-auto">
+    <main className="flex gap-3 flex-col justify-between p-12 max-w-6xl mx-auto">
       <title>Portfolio</title>
-      <div>
-        <h1 className="text-6xl">Lewin Lin</h1>
-        <p>Computer Science Student at McMaster University</p>
-      </div>
+      <div className="grid gap-2 grid-cols-1 md:grid-cols-3">
+        <div className="col-span-2">
+          <h1 className="text-6xl text-blue-500"><b>Lewin Lin</b></h1>
+          <p><b>Computer Science</b> Student at <i>McMaster University</i></p>
+        </div>
 
-      <div></div>
+        <div>
+          <ul>
+            <div className="flex flex-row gap-2">
+              <FaGithub/>
+              <li>
+                  Github: {" "}        
+                <a
+                  className="text-blue-600 underline"
+                  href="https://github.com/lewinl349/">
+                  @lewinl349
+                </a>
+              </li>
+            </div>
+            <div className="flex flex-row gap-2">
+              <FaLinkedin />
+              <li className="vertical-align: middle;"> 
+                LinkedIn: {" "}
+                <a
+                  className="text-blue-600 underline"
+                  href="https://www.linkedin.com/in/lewin-lin">
+                  @lewin-lin
+                </a>
+              </li> 
+            </div>
+          </ul>
+        </div>
 
-      <div>
-        <h2 className="text-4xl">Socials</h2>
-
-        <ul>
-          <div className="flex flex-row gap-2">
-            <FaGithub/>
-            <li>
-                Github: {" "}        
-              <a
-                className="text-blue-600 underline"
-                href="https://github.com/lewinl349/">
-                @lewinl349
-              </a>
-            </li>
-          </div>
-          <div className="flex flex-row gap-2">
-            <FaLinkedin />
-            <li className="vertical-align: middle;"> 
-              LinkedIn: {" "}
-              <a
-                className="text-blue-600 underline"
-                href="https://www.linkedin.com/in/lewin-lin">
-                @lewin-lin
-              </a>
-            </li> 
-          </div>
-        </ul>
       </div>
 
       <div></div>
