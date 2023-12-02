@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 export default function Home() {
   return (
     <main className="flex gap-3 flex-col justify-between p-24 max-w-5xl mx-auto">
+      <title>Portfolio</title>
       <div>
         <h1 className="text-6xl">Lewin Lin</h1>
         <p>Computer Science Student at McMaster University</p>
@@ -58,7 +59,7 @@ export default function Home() {
       </div>
 
       <div></div>
-
+      {/*
       <div className="flex flex-col gap-2">
         <h2 className="text-4xl">Projects</h2>
         <div className="grid gap-2 grid-cols-1 md:grid-cols-2">
@@ -114,8 +115,7 @@ export default function Home() {
       </div>
 
       {/* An example of how to use JS functions in JSX*/}
-      The date is {new Date().toUTCString()}
-
+      {/*The date is {new Date().toUTCString()}*/}
     </main>
   )
 }
