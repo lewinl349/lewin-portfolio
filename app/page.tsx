@@ -10,6 +10,8 @@ export default function Home() {
         <p>Computer Science Student at McMaster University</p>
       </div>
 
+      <div></div>
+
       <div>
         <h2 className="text-4xl">Socials</h2>
 
@@ -27,12 +29,35 @@ export default function Home() {
             LinkedIn: {" "}
             <a
               className="text-blue-600 underline"
-              href="www.linkedin.com/in/lewin-lin">
+              href="https://www.linkedin.com/in/lewin-lin">
               @lewin-lin
             </a>
           </li>
         </ul>
       </div>
+
+      <div></div>
+
+      <div className="flex flex-col gap-2">
+        <h2 className="text-4xl">Skills</h2>
+        <div className="grid gap-2 grid-cols-1 md:grid-cols-3">
+          <div className="col-span-2 p-4 border rounded shadow-md hover:bg-sky-100">
+            <h3 className="text-3xl text-bold">Programming Languages</h3>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Elm</li>
+          </div>
+          <div className="p-4 border rounded shadow-md hover:bg-sky-100">
+            <h3 className="text-3xl text-bold">Tools</h3>
+            <li>VS Code</li>
+            <li>Github</li>
+            <li>Google Workplace</li>
+            <li>Microsoft 365</li>
+          </div>
+        </div>
+      </div>
+
+      <div></div>
 
       <div className="flex flex-col gap-2">
         <h2 className="text-4xl">Projects</h2>
