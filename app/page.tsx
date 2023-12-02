@@ -5,7 +5,7 @@ import Sidebar from "./ui/sidebar";
 export default function Home() {
   return (
     <main className="flex flex-row">
-      <title>Portfolio</title>
+      <title>Home</title>
 
       <Sidebar />
 
