@@ -1,11 +1,13 @@
 import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
     <main className="flex gap-3 flex-col justify-between p-24 max-w-5xl mx-auto">
       <div>
-        <h1 className="text-6xl">John Doe</h1>
-        <p>Developer, Student at McMaster University</p>
+        <h1 className="text-6xl">Lewin Lin</h1>
+        <p>Computer Science Student at McMaster University</p>
       </div>
 
       <div>
@@ -13,27 +15,20 @@ export default function Home() {
 
         <ul>
           <li>
-            Twitter: {" "}
+              <FaGithub />Github: {" "}        
             <a
               className="text-blue-600 underline"
-              href="https://twitter.com">
-              @johndoe
+              href="https://github.com/lewinl349/">
+              @lewinl349
             </a>
           </li>
           <li>
-            Github: {" "}
-            <a
-              className="text-blue-600 underline"
-              href="https://github.com">
-              @johndoe
-            </a>
-          </li>
-          <li>
+            <FaLinkedin />
             LinkedIn: {" "}
             <a
               className="text-blue-600 underline"
-              href="https://linkedin.com">
-              @johndoe
+              href="www.linkedin.com/in/lewin-lin">
+              @lewin-lin
             </a>
           </li>
         </ul>
