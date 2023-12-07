@@ -12,19 +12,15 @@ export default function Page() {
                 <br></br>
 
                 <div className="grid gap-2 grid-cols-1 md:grid-cols-2">
-                    <div className="p-4 border rounded shadow-md">
-                        <h3 className="text-3xl text-bold">Project Alpha</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.</p>
+                    <div className="p-4 border rounded shadow-md hover:bg-sky-100">
+                        <h3 className="text-3xl text-bold">Portfolio Website</h3>
+                        <p>You are on the website right now! It is a project to
+                            learn more about HTML, CSS, and Javascript. Also, for
+                            me to exlore NextJS a framework of ReactJS. This is hosted
+                            with Vercel and Github Pages.
+                        </p>
                     </div>
-                    <div className="p-4 border rounded shadow-md">
+                    <div className="p-4 border rounded shadow-md hover:bg-sky-100">
                         <h3 className="text-3xl text-bold">Project Beta</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit, sed do eiusmod tempor incididunt ut labore et
@@ -36,7 +32,7 @@ export default function Page() {
                         cupidatat non proident, sunt in culpa qui officia
                         deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div className="p-4 border rounded shadow-md">
+                    <div className="p-4 border rounded shadow-md hover:bg-sky-100">
                         <h3 className="text-3xl text-bold">Project Gamma</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit, sed do eiusmod tempor incididunt ut labore et
@@ -48,7 +44,7 @@ export default function Page() {
                         cupidatat non proident, sunt in culpa qui officia
                         deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div className="p-4 border rounded shadow-md">
+                    <div className="p-4 border rounded shadow-md hover:bg-sky-100">
                         <h3 className="text-3xl text-bold">Project Delta</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit, sed do eiusmod tempor incididunt ut labore et
